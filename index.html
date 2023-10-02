@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Товар ДВ</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/first-screen.css">
+</head>
+<body>
+    <div class="menu-bg"></div>
+    <header>
+        <nav id="header-nav">
+            <div class="header-top">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 header-top-mobile display-flex flex-justify-space-between flex-align-center">
+                                <button class="menu-mobile-toggle">
+                                    <span></span>
+                                </button>
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <picture>
+                                            <source srcset="img/logo-black.webp" type="image/webp">
+                                            <img src="img/logo-black.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a class="header-phone" href="tel:+74212771883">+7 (4212) 771-883</a>
+                                <a class="header-phone" href="tel:+79145441883">+7 914 544 18 83</a>
+                                <a href="#" class="btn-header-call" data-modal-id="modal-window-call">
+                                    <span>Обратный звонок</span>
+                                </a>
+                                <div class="header-top-cart display-flex flex-align-center">
+                                    <i class="icon-basket"></i>
+                                    <a href="cart.html">
+                                        <span class="top-cart-count">(0 товаров)</span>
+                                        <span class="top-cart-price">0 руб.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 header-nav-mobile display-flex flex-justify-space-between">
+                                <div class="header-nav-menu">
+                                    <ul class="header-nav-ul display-flex">
+                                        <li><a href="index.html" class="active">Главная</a></li>
+                                        <li><a href="about.html">О компании</a></li>
+                                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                                        <li><a href="articles.html">Полезная информация</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-nav-login">
+                                    <span class="display-flex flex-justify-center flex-align-center">
+                                        <i class="icon-user"></i>
+                                        Личный кабинет
+                                    </span>
+                                    <div class="login-block-hidden">
+                                        <ul>
+                                            <li><a href="signup.html">Зарегистрироваться</a></li>
+                                            <li><a href="login.html">Войти на сайт</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="display-flex flex-justify-center flex-align-center" style="display: none;">
+                                        <a href="#" class="header-user-name">
+                                            <i class="icon-user"></i>
+                                            UserName
+                                        </a>
+                                    </span>
+                                    <!--Блок скрытый для авторизованного пользователя
+                                    <div class="login-block-hidden">
+                                        <ul>
+                                            <li><a href="#">Выйти</a></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-bottom-mobile col-12 display-flex flex-justify-space-between">
+                                <div class="header-catalog">
+                                    <ul class="header-menu-ul display-flex flex-justify-space-between">
+                                        <li>
+                                            <a href="catalog.html" class="header-catalog-btn">Каталог продукции<i class="icon-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li class="sub-menu-item">
+                                                    <a href="category.html">Фурнитура для пластиковых окон</a>
+                                                    <ul class="sub-menu-lev-2">
+                                                        <li><a href="category-sub.html">Для москитных систем</a></li>
+                                                        <li><a href="category-sub.html">Для пластиковых окон</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="category.html">Дверная фурнитура</a></li>
+                                                <li><a href="category.html">Фурнитура для штор</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-search">
+                                    <form action="/" method="post">
+                                        <input type="text" name="searchword" placeholder="Введите запрос" />
+                                        <button name="search">
+                                            <span>Искать в каталоге</span>
+                                            <i class="icon-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="header-cart-fixed flex-align-center">
+                                    <i class="icon-basket"></i>
+                                    <a href="cart.html">
+                                        <span class="top-cart-count">(0 товаров)</span>
+                                        <span class="top-cart-price">0 руб.</span>
+                                    </a>
+                                </div>
+                                <div class="header-login-fixed">
+                                    <span class="display-flex flex-justify-center flex-align-center">
+                                        <i class="icon-user"></i>
+                                        Личный кабинет
+                                    </span>
+                                    <div class="login-block-hidden">
+                                        <ul>
+                                            <li><a href="#">Зарегистрироваться</a></li>
+                                            <li><a href="#">Войти на сайт</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="display-flex flex-justify-center flex-align-center" style="display: none;">
+                                        <a href="#" class="header-user-name">
+                                            <i class="icon-user"></i>
+                                            UserName
+                                        </a>
+                                    </span>
+                                    <!--Блок скрытый для авторизованного пользователя
+                                    <div class="login-block-hidden">
+                                        <ul>
+                                            <li><a href="#">Выйти</a></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="slidelist">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="slide-text">
+                            <h3>Бесплатная доставка до вашего города</h3>
+                            <p>Приобретая товар в нашем интернет-магазине вы не платите за доставку. Все расходы мы берем на себя!</p>
+                            <a href="catalog.html" class="btn-white">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/slider/slide-1.jpg" alt="" />
+            </div>
+            <div class="slidelist" style="display: none;">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="slide-text">
+                            <h3>Гарантировано меняем брак</h3>
+                            <p>Если вам по каким-либо причинам попал бракованный товар, то мы гарантированно произведем его замену!</p>
+                            <a href="catalog.html" class="btn-white">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/slider/slide-2.jpg" alt="" />
+            </div>
+            <div class="slidelist" style="display: none;">
+                <div class="maingrid">
+                    <div class="container">
+                        <div class="slide-text">
+                            <h3>Работаем 365 дней в году без выходных</h3>
+                            <p>Наша компания готова предоставлять вам свои услуги в любой день в году, ведь мы работаем без выходных!</p>
+                            <a href="catalog.html" class="btn-white">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/slider/slide-3.jpg" alt="" />
+            </div>
+        </section>
+        <div class="block-arrows">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="append-arrows"></div>
+                </div>
+            </div>
+        </div>
+        <section id="products">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Продукция</h2>
+                            <p class="text-gray">Наш ассортимент постоянно расширяется</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="search-products">
+                                <form id="search-form" action="/" method="post">
+                                    <input type="text" name="searchword" placeholder="Поиск по сайту..." />
+                                    <button name="search">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="products-categories">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="category.html">
+                                            <div class="prod-text display-flex flex-align-center">
+                                                <div class="img-window"></div>
+                                                <span>Фурнитура для пластиковых окон</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="category.html">
+                                            <div class="prod-text display-flex flex-align-center">
+                                                <div class="img-door"></div>
+                                                <span>Дверная фурнитура</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="category.html">
+                                            <div class="prod-text display-flex flex-align-center">
+                                                <div class="img-curtain"></div>
+                                                <span>Фурнитура для штор</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="maingrid about-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2>О компании</h2>
+                            <div class="text-gray">
+                                <p>Компания "Товар ДВ" всесторонне открыта для взаимовыгодного сотрудничества со всеми заинтересованными компаниями, работающими на рынке строительных материалов на Дальнем Востоке. Имеет бесплатную доставку, позволяющую уменьшить расходы покупателей, при этом сохраняя привлекательные цены.</p>
+                                <p>На данном сайте, мы постарались представить всю необходимую информацию о предлагаемой продукции.</p>
+                                <p>Менеджеры нашей компании, контакты которых Вы найдете на данном сайте, с готовностью ответят на все интересующие Вас вопросы. Либо свяжитесь с нами через форму обратной связи сайта.</p>
+                            </div>
+                            <a href="#" class="btn-orange">Подробнее</a>
+                        </div>
+                        <div class="col-4">
+                            <picture>
+                                <source srcset="img/about.webp" type="image/webp">
+                                <img src="img/about.jpg" alt="" />
+                            </picture>
+                        </div>
+                        <div class="text-bg-orange">
+                            <span>Наша компания отличается высочайшим качеством обслуживания! И каждый день мы стремимся сделать наш сервис лучше!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="advantage">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center">Наши преимущества</h2>
+                        </div>
+                        <div class="col-3">
+                            <div class="advantage-info">
+                                <picture>
+                                    <source srcset="img/advantage/advantage-1.webp" type="image/webp">
+                                    <img src="img/advantage/advantage-1.jpg" alt="" />
+                                </picture>
+                                <span class="advantage-info-text text-orange">Бесплатная доставка до Вашего города</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="advantage-info">
+                                <picture>
+                                    <source srcset="img/advantage/advantage-2.webp" type="image/webp">
+                                    <img src="img/advantage/advantage-2.jpg" alt="" />
+                                </picture>
+                                <span class="advantage-info-text text-orange">Гарантировано меняем брак</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="advantage-info">
+                                <picture>
+                                    <source srcset="img/advantage/advantage-3.webp" type="image/webp">
+                                    <img src="img/advantage/advantage-3.jpg" alt="" />
+                                </picture>
+                                <span class="advantage-info-text text-orange">365 дней в году без выходных</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="advantage-info">
+                                <picture>
+                                    <source srcset="img/advantage/advantage-4.webp" type="image/webp">
+                                    <img src="img/advantage/advantage-4.jpg" alt="" />
+                                </picture>
+                                <span class="advantage-info-text text-orange">Очень выгодные <br>цены</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="maingrid">
+            <div class="container">
+                <div class="footer-menu">
+                    <ul class="footer-menu-ul display-flex flex-justify-space-between">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="catalog.html">Каталог продукции</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="articles.html">Полезная информация</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="footer-copyright display-flex flex-align-center flex-justify-space-between">
+                        <div class="col">
+                            <div class="copy-block">
+                                <span>&copy; 2019 Товар ДВ</span>
+                                <span>Центр оптовой торговли</span>
+                                <a href="personal-data.html">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer-address">
+                                <span><i class="icon-location"></i>г. Хабаровск</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer-tel">
+                                <div class="display-flex flex-align-center">
+                                    <i class="icon-phone"></i>
+                                    <a href="tel:+74212771883">+7(4212) 771-883</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer-tel">
+                                <div class="display-flex flex-align-center">
+                                    <i class="icon-phone"></i>
+                                    <a href="tel:+79145441883">+7 914 544 18 83</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="studio text-right">
+                                <span>Разработка сайта - <span style="color:#ed8504;">Skibidi</span><span class="black">Production</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="scroller" class="toTop icon-up-open"></a>
+    <div id="cart-fixed">
+        <div class="cart-fixed-content">
+            <a href="cart.html">
+                <i class="icon-basket"></i>
+                <div class="cart-fixed-count">
+                    <span>12</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="modal-window-call" class="modal-none">
+        <div class="modal-window-msg">
+            <div class="modal-window-content">
+                <form method="post" action="/" class="skibidi-form">
+                    <!--<div class="modal-form-img">
+                        <picture>
+                            <source srcset="img/icon/tel.webp" type="image/webp">
+                            <img src="img/icon/tel.jpg" alt="" />
+                        </picture>
+                    </div>-->
+                    <p class="title-form"><span>Обратный звонок</span></p>
+                    <input type="text" required="required" name="skibidi-name" placeholder="Имя">
+                    <p class="err-message"></p>
+                    <input type="text" required="required" name="skibidi-phone" placeholder="Телефон">
+                    <p class="err-message"></p>
+                    <input type="submit" value="Отправить" class="skibidi-form-submit">
+                    <div class="skibidiAgree">
+                        <div class="skibidiChekboxAgree checked"></div>
+                        <div class="skibidiTextAgree">«Нажимая на кнопку ОТПРАВИТЬ, я даю <a href="personal-data.html" target="blank">согласие на обработку персональных данных</a>»</div>
+                    </div>
+                </form>
+                <a class="modal-window-close">&#215;</a>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/adaptation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
